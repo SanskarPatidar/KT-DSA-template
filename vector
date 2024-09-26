@@ -1,0 +1,44 @@
+
+VECTOR-->
+
+type --> MutableList<>
+to create --> mutableListOf<>()
+
+to initialize 2d matrix -->
+
+var dp = MutableList(m) { MutableList(n) { 0 } }
+
+to add remove -->
+
+/*
+val vec = mutableListOf(10, 20, 30, 40)
+or
+var vec = mutableListOf()
+or
+var vec : MutableList<Int>
+init {
+  	vec = mutableListOf()//empty vector
+}
+or
+var vec : MutableList<MutableList<Int>>                   	<-- 2DMATRIX
+init {
+  	vec = mutableListOf()
+}
+*/
+
+vec.add(10)  // push equivalent
+vec.add(20)
+println(vec) // [10, 20]
+
+val lastElement = vec.removeLast() // pop as well as get
+
+
+
+
+
+
+
+
+
+
+
