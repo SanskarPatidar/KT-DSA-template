@@ -1,0 +1,38 @@
+SORTING-->
+
+fruits.sort()
+
+custom comparator -->
+
+nums.sortedWith(Comparator{a,b->
+val a1 = a.toString();
+val b1 = b.toString();
+(b1+a1).compareTo(a1+b1);
+})
+//where a.compartTo(b) will give negative number if a<b *** first object is considered smaller than second so arrange like this --> a, b***
+              	zero if a == b
+             	positive if a>b *** first object is considered greater than second so arranged like this --> b, a***
+/*
+best analogy --> a, b
+
+agar yeh kiya a.compareTo(b)
+means if a<=b toh dont change order else if a>b then do b, a (ascending)
+
+agar yeh kiya b.compareTo(a)
+means if b<=a toh dont change order means keep it descending
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
