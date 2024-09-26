@@ -1,0 +1,9 @@
+LOOPS-->
+
+i in 0..n //(inclusive end)
+
+i in 0 until n //(exclusive end)
+
+vec.forEach{
+//use it as iterator
+}
