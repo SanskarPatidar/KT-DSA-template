@@ -11,3 +11,19 @@ vec.forEach{
 for (element in array) {
     println(element)
 }
+
+var i = 1
+while (i <= 5) {
+    println(i)
+    i++ // Increment to avoid infinite loop
+}
+
+
+***
+numbers.forEachIndexed { index, value -> 
+        println("Index: $index, Value: $value")
+}
+
+***
+
+
