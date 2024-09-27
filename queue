@@ -1,0 +1,12 @@
+val queue: Queue<Int> = LinkedList()
+
+    queue.add(1)  // Add element to the back of the queue
+    queue.add(2)
+    queue.add(3)
+
+ println("Queue after enqueuing: $queue")  // Output: [1, 2, 3]
+
+val removedElement = queue.remove()
+
+// Peek the front element without removing it
+    val front = queue.peek()
