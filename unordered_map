@@ -1,0 +1,5 @@
+val map = HashMap<String, Int>()
+OR
+val map = mutableMapOf<String, Int>()
+
+var map: HashMap<String, Int>? = null
