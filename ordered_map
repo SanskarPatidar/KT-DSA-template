@@ -1,0 +1,16 @@
+val map = TreeMap<Int, Int>()   // yes can use map as variable
+
+for (entry in map) {
+    println("Key: ${entry.key}, Value: ${entry.value}")
+}
+
+map.forEach { (key, value) ->
+    println("Key: $key, Value: $value")
+}
+
+// Increment value at key (if key doesn't exist, initialize with 1)
+    map[key] = map.getOrDefault(key, 0) + 1
+since -->You can use map[key]++ if:
+The map is mutable.
+The value at the key is numeric.
+The key exists in the map.
