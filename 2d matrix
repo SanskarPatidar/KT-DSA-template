@@ -1,0 +1,17 @@
+to initialize 2d matrix -->
+
+var dp = MutableList(m) { MutableList(n) { 0 } }
+
+if want to keep it empty initally -->
+val result: MutableList<MutableList<Int>> = mutableListOf()
+or 
+val result = mutableListOf<MutableList<Int>>()
+
+
+result.add(mutableListOf(1, 2, 3)) // Adding first row
+result.add(mutableListOf(4, 5))    // Adding second row
+result.add(mutableListOf())         // Adding an empty row
+
+// Step 3: Add more elements to the existing rows
+result[1].add(6) // Add to the second row
+result[2].add(7) // Add to the third row
