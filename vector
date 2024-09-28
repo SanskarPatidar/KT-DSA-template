@@ -36,6 +36,10 @@ println(vec) // [10, 20]
 val lastElement = vec.removeLast() // pop as well as get
 
 
+to initialize all value with indices -->
+val dp = MutableList<Int>(n) {it}
+
+
 
 
 
