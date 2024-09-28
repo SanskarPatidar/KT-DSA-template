@@ -4,6 +4,10 @@ i in 0..n //(inclusive end)
 
 i in 0 until n //(exclusive end)
 
+i in 0..4 step 2 // STEP MUST BE POSITIVE
+
+i in 10 downTo 1 step 2 // only way from high to low value
+
 vec.forEach{
 //use it as iterator
 }
