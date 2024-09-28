@@ -1,6 +1,7 @@
 to initialize 2d matrix -->
 
 var dp = MutableList(m) { MutableList(n) { 0 } }
+otherwise write dp = MutableList<MutableList<Int>>(m) { MutableList<Int>(n) {0}}
 
 if want to keep it empty initally -->
 val result: MutableList<MutableList<Int>> = mutableListOf()
