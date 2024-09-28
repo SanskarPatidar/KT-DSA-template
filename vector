@@ -36,6 +36,12 @@ to initialize all value with indices -->
 val dp = MutableList<Int>(n) {it}
 
 
+to reverse -->
+vec.reverse()
+
+to check empty -->
+vec.isEmpty()
+
 
 
 
