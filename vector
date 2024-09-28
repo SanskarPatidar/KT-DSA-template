@@ -8,6 +8,9 @@ to initialize 2d matrix -->
 
 var dp = MutableList(m) { MutableList(n) { 0 } }
 
+to get size -->
+vec.size
+
 to add remove -->
 
 /*
