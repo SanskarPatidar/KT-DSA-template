@@ -10,3 +10,46 @@ val removedElement = queue.remove()
 
 // Peek the front element without removing it
     val front = queue.peek()
+
+//to check for emptiness
+if (q.isEmpty())
+
+//use of ?.let is highly recommended
+example -->
+    node.left?.let{
+    q.add(node.value)
+    }
+    node.right?.let{
+    q.add(node.value)
+    }
+
+BFS -->
+fun levelOrderBottom(root: TreeNode?): List<List<Int>> {
+        val result = mutableListOf<MutableList<Int>>()
+        if(root == null)return result
+        val q : Queue<TreeNode> = LinkedList()
+        q.add(root)
+        while(!q.isEmpty()){
+            var size = q.size
+            val temp = mutableListOf<Int>()
+            while(size>0){
+                val node = q.remove()
+
+                node.left?.let{
+                    q.add(node.left)
+                }
+                node.right?.let{
+                    q.add(node.right)
+                }
+                temp.add(node.`val`)
+                size--
+            }
+            result.add(temp)
+            
+        }
+        result.reverse()
+        return result
+        
+
+
+    }
