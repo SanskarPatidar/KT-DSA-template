@@ -23,7 +23,14 @@ while (i <= 5) {
 numbers.forEachIndexed { index, value -> 
         println("Index: $index, Value: $value")
 }
-
+OR
+Use grid.indices for iterating through the row indices.
+for (rowIndex in grid.indices) {
+        for (colIndex in grid[rowIndex].indices) {
+            val value = grid[rowIndex][colIndex]
+            println("Element at [$rowIndex][$colIndex]: $value")
+        }
+}
 ***
 
 
