@@ -1,0 +1,8 @@
+// Java code
+String str1 = "Hello World!", str2 = "Hi there", str3 = "See you later";
+
+//Kotlint code
+ val aLong = 42L; val aString = "Kotlin is awesome!"
+
+ //Sharp eyes may have noticed that, unlike Java, in Kotlin, we can declare and assign multiple variables of different types in one line.
+ 
