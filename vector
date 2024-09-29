@@ -7,6 +7,9 @@ to create --> mutableListOf<>()
 to get size -->
 vec.size
 
+to create of size n -->
+val dp = MutableList(n) { 0 }
+
 to add remove -->
 
 /*
