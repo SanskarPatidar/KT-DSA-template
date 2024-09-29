@@ -11,6 +11,9 @@ val a1 = a.toString();
 val b1 = b.toString();
 (b1+a1).compareTo(a1+b1);
 })
+
+*****smartly -- > words.sortBy { it.length }*****
+
 //where a.compartTo(b) will give negative number if a<b *** first object is considered smaller than second so arrange like this --> a, b***
               	zero if a == b
              	positive if a>b *** first object is considered greater than second so arranged like this --> b, a***
