@@ -1,5 +1,8 @@
 val map = TreeMap<Int, Int>()   // yes can use map as variable
 
+to put anything in map -->
+map[key] = value
+
 for (entry in map) {
     println("Key: ${entry.key}, Value: ${entry.value}")
 }
@@ -8,6 +11,7 @@ map.forEach { (key, value) ->
     println("Key: $key, Value: $value")
 }
 
+***IMP***
 // Increment value at key (if key doesn't exist, initialize with 1)
     map[key] = map.getOrDefault(key, 0) + 1
 since -->You can use map[key]++ if:
@@ -21,3 +25,9 @@ What containsKey Does:
 Returns true if the map has the specified key.
 Returns false if the key is not present in the map.
 ***********************************************
+
+to erase --> 
+map.remove(key)
+
+to access first and last element -->
+Using .first() and .last() Functions
