@@ -15,7 +15,7 @@ The map is mutable.
 The value at the key is numeric.
 The key exists in the map.
 
-
+map[3] = map.getOrPut(3) { 0 } + 1
 ***************getOrPut(key) { HashSet() }**************
 freqToString.getOrPut(3) { HashSet() }.add("apple")
 freqToString.getOrPut(3) { HashSet() }.add("banana")
