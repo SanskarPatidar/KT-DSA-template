@@ -15,15 +15,6 @@ The map is mutable.
 The value at the key is numeric.
 The key exists in the map.
 
-map[3] = map.getOrPut(3) { 0 } + 1
-***************getOrPut(key) { HashSet() }**************
-freqToString.getOrPut(3) { HashSet() }.add("apple")
-freqToString.getOrPut(3) { HashSet() }.add("banana")
-freqToString.getOrPut(1) { HashSet() }.add("cherry")
-getOrPut(key) { HashSet() } checks if the key is present:
-If yes, it returns the current set.
-If no, it initializes a new HashSet and returns it.
-********************************************************
 
 **************.containsKey(key)****************
 What containsKey Does:
