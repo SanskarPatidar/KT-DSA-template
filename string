@@ -1,0 +1,2 @@
+for length -->
+str.length // not .size like others
