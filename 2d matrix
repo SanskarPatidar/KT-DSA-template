@@ -7,6 +7,8 @@ if want to keep it empty initally -->
 val result: MutableList<MutableList<Int>> = mutableListOf()
 or 
 val result = mutableListOf<MutableList<Int>>()
+or 
+val adjList = MutableList(n){mutableListOf<Int>()} // only rows defined and not colms
 
 
 result.add(mutableListOf(1, 2, 3)) // Adding first row
