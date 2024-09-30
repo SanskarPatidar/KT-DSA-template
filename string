@@ -1,2 +1,7 @@
 for length -->
 str.length // not .size like others
+
+for substring -->
+str.substring(i, j) // for substring from i until j
+do this -->
+str.substring(i, i + length) like vec.begin(), vec.begin() + x
