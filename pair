@@ -2,3 +2,11 @@ PAIR -->
 pair<Int, Int>
 
 ex. val q: Queue<Pair<Int, Int>> = LinkedList()
+
+The issue you're facing occurs because Pair is immutable in Kotlin. When you create a Pair like:
+var answer = Pair(0, 0)
+
+answer.first = i; answer.second = j
+this will not work instead do this -->
+answer = Pair(i, j)
+is reassigning new instance to answer variable
