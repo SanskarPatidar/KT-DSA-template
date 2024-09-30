@@ -1,0 +1,30 @@
+Kotlin has several operators to handle null safety:
+1. Safe Call Operator (?.):
+This operator allows you to access a property or method of a nullable object without risking a NullPointerException. If the object is null, the expression returns null.
+Kotlin
+
+val name: String? = null
+val length = name?.length // length will be null
+
+2. Elvis Operator (?:):
+This operator provides a default value if the expression on the left is null.
+Kotlin
+
+val name: String? = null
+val greeting = "Hello, " + (name ?: "Guest") // greeting will be "Hello, Guest"
+
+3. Not-Null Assertion Operator (!!) :
+This operator converts a nullable type to a non-nullable type. If the expression is null, it throws a NullPointerException. Use this operator with caution.
+Kotlin
+
+val name: String? = null
+val length = name!!.length // throws NullPointerException if name is null
+
+4. Let Operator:
+This operator allows you to execute a code block only if the object is not null.
+Kotlin
+
+val name: String? = "John"
+name?.let { 
+    println("Hello, $it") // prints "Hello, John"
+}
