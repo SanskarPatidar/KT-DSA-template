@@ -1,0 +1,82 @@
+ARRAY-->
+var dp = Array(m) { Array(n) { 0 } }
+
+IntArray is a specialized array type in Kotlin used to store a collection 
+of integers (Int). It is optimized for primitive Int values, providing better 
+performance and lower memory usage compared to using a List<Int> or a MutableList<Int>.
+
+val arr = intArrayOf(1, 2, 3, 4, 5)
+val arr = IntArray(5) // Creates an array of size 5 with default values (0)
+val arr = IntArray(5) { it * 2 } // Creates an array [0, 2, 4, 6, 8] // where it is index
+val emptyArr = IntArray(0) // empty array
+
+Common Operations on IntArray -->
+
+Finding the maximum element:
+val max = arr.maxOrNull()
+
+Finding the minimum element:
+val min = arr.minOrNull()
+
+Sorting in ascending order:
+arr.sort()
+
+Sorting in descending order:
+arr.sortDescending()
+
+Calculating the sum:
+val sum = arr.sum()
+
+Finding the average:
+val avg = arr.average()
+
+Converting Between IntArray and Other Collections
+
+Convert IntArray to List<Int>:
+val intList = arr.toList()
+
+Convert List<Int> to IntArray:
+val list = listOf(1, 2, 3, 4)
+val intArray = list.toIntArray()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
