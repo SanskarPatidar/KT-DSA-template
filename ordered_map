@@ -37,7 +37,7 @@ getOrDefault does not modify the map, just returns the default value if the key 
 getOrPut modifies the map by adding a new entry if the key is absent.
 
 val map = mutableMapOf("a" to 1, "b" to 2)
-val value = map.getOrDefault("c", 0)  // value = 0, map remains {"a" to 1, "b" to 2}
+map.getOrDefault("c", 0)  // value = 0, map remains {"a" to 1, "b" to 2}
 
 val map = mutableMapOf("a" to 1, "b" to 2)
 val value = map.getOrPut("c") { 0 }  // value = 0, map becomes {"a" to 1, "b" to 2, "c" to 0}
