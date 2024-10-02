@@ -18,3 +18,32 @@ result.add(mutableListOf())         // Adding an empty row
 // Step 3: Add more elements to the existing rows
 result[1].add(6) // Add to the second row
 result[2].add(7) // Add to the third row
+
+**************************************IMP****************************************
+The issue in your code is with the way you're adding the temp list to result. 
+Since temp is mutable, when you add it to result, any future modifications to 
+temp (such as adding or removing elements) will also be reflected in the result
+list because both temp and the list inside result will refer to the same object in memory.
+
+The Problem
+In your code:
+
+kotlin
+Copy code
+if (node == n - 1) {
+    result.add(temp) // This adds a reference to the same mutable list `temp`
+}
+This causes all paths stored in result to have the same elements as temp at the end of the 
+DFS traversal. So, you'll end up with all the paths being the same, which is not what you want.
+
+Solution: Create a Copy of the List
+When you want to store temp in result, you should store a copy of temp. This way, even if 
+temp changes later, it won't affect the already stored path.
+
+Corrected Code
+Replace:
+
+
+result.add(temp)
+With:
+result.add(temp.toMutableList()) // Make a copy of the current path and add it
