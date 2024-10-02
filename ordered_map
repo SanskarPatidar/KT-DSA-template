@@ -43,3 +43,7 @@ val map = mutableMapOf("a" to 1, "b" to 2)
 val value = map.getOrPut("c") { 0 }  // value = 0, map becomes {"a" to 1, "b" to 2, "c" to 0}
 
 Syntax: map.getOrPut(key) { defaultValue }
+
+NOTICE THE USAGE -->
+when map[] kaa koi value change karna hai tab use getOrDefault
+when koi value retrieve karna hai or nahi hai toh put karna hai tab use getOrPut
