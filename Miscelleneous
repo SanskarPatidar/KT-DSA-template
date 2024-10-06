@@ -1,3 +1,6 @@
 to get max element in array -->
 Using .maxOrNull()
 This method returns the maximum element in the array or null if the array is empty.
+
+to get sqrt -->
+Using sqrt() on a number
