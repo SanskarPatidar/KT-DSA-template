@@ -1,6 +1,15 @@
-to get max element in array -->
-Using .maxOrNull()
-This method returns the maximum element in the array or null if the array is empty.
+1.to get max element in array -->
+  Using .maxOrNull()
+  This method returns the maximum element in the array or null if the array is empty.
 
-to get sqrt -->
-Using sqrt() on a number
+2.to get sqrt -->
+  Using sqrt() on a number
+
+3.stringstream -->
+  val input = "word1 word2 word3"
+  val words = input.split(" ") // Splits the string by spaces i.e. a delimeter
+  
+  for (word in words) {
+      println(word) 
+  }
+
