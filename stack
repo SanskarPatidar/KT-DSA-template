@@ -3,7 +3,14 @@ import java.util.Stack
 val stack = Stack<Int>()
 
 stack.push(1)  // Push 1 onto the stack
-stack.push(2)  // Push 2 onto the stack
 
-println(stack.pop())  // Pop the top element (prints 2)
-println(stack.pop())  // Pop the top element (prints 1)
+println(stack.pop())  // Pop the top element (prints 2) --> like remove(), can peek and pop at same time!!!!
+
+val topElement = stack.peek()  // Returns 10, without removing it
+
+val isEmpty = stack.empty()  // Returns false, as stack contains elements
+
+val size = stack.size  // Returns 1
+
+Search: Searches for a specific element in the stack. Returns the 1-based position of the element from the top of the stack. If not found, returns -1.
+val position = stack.search(10)  // Returns 1 (top element's position)
