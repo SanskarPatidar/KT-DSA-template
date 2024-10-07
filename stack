@@ -1,0 +1,9 @@
+import java.util.Stack
+
+val stack = Stack<Int>()
+
+stack.push(1)  // Push 1 onto the stack
+stack.push(2)  // Push 2 onto the stack
+
+println(stack.pop())  // Pop the top element (prints 2)
+println(stack.pop())  // Pop the top element (prints 1)
