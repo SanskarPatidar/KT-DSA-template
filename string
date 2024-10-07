@@ -5,3 +5,81 @@ for substring -->
 str.substring(i, j) // for substring from i until j
 do this -->
 str.substring(i, i + length) like vec.begin(), vec.begin() + x
+
+USE STRING BUILDER CLASS FOR EFFICIENT STRING OPERATIONS-->
+
+Creating a StringBuilder
+There are a few ways to create a StringBuilder:
+
+Empty StringBuilder:
+val sb = StringBuilder()
+
+From an existing string:
+val sb = StringBuilder("Hello")
+
+With initial capacity:
+val sb = StringBuilder(100)  // Reserves capacity for 100 characters
+
+key methods -->
+sb.append(" World")       // Adds a string
+sb.append('!')            // Adds a character
+sb.insert(5, ", Kotlin")  // Inserts at index 5
+sb.delete(5, 12)          // Deletes characters from index 5 to 11
+sb.deleteCharAt(0)        // Deletes the character at index 0
+sb.replace(0, 5, "Hi")    // Replaces from index 0 to 4 with "Hi"
+sb.reverse()              // Reverses the string
+val capacity = sb.capacity()   // Returns the current capacity
+val length = sb.length         // Returns the current length
+sb.setLength(3)                // Sets the length to 3 characters
+
+val result: String = sb.toString()
+
+return number.toString() == number.reverse().toString()
+since the number itself is reversed, this will always give true if not converted to string!!!
+
+
+
+***************NOTE**************
+Time Complexity Analysis for String Concatenation:
+When concatenating two strings (str1 and str2) with lengths m and n respectively, 
+the time complexity differs depending on whether we use the += operator or StringBuilder.
+
+1. Using += Operator:
+The += operator creates a new string each time it is used, because strings in Kotlin are 
+immutable. When two strings are concatenated using +=, a new string is created by copying 
+all characters from both str1 and str2. Thus, the time complexity for this operation is 
+determined by the lengths of the two strings.
+
+Explanation:
+
+Let str1 have length m and str2 have length n.
+During concatenation, the system copies the entire str1 and str2 into a new string.
+This operation takes O(m + n) time, as all m + n characters need to be copied into the newly created string.
+Time Complexity:
+
+O(m+n)
+
+2. Using StringBuilder.append():
+StringBuilder is a mutable sequence of characters, allowing efficient modifications without creating new string objects each time. The append() operation is designed to directly add new content to the existing internal buffer of StringBuilder.
+
+Explanation:
+
+Appending a string (e.g., str2) to an existing StringBuilder that already holds str1 (with length m) generally takes O(n) time.
+This is because it simply extends the internal character buffer by n characters without the need to copy m characters from str1 each time.
+If the buffer needs to expand due to insufficient capacity, an internal resizing might occur, which could involve copying the current characters. However, this resizing is done infrequently, resulting in amortized O(1) time for each individual append() operation.
+Time Complexity:
+For a single concatenation of two strings using StringBuilder:
+
+O(n)
+where n is the length of the string being appended.
+
+Final Summary:
++= Operator Time Complexity:
+
+O(m+n)
+
+StringBuilder.append() Time Complexity:
+
+O(n)
+
+This makes StringBuilder significantly more efficient for repeated string concatenation, especially when m is large or when the concatenation is done multiple times (e.g., in loops).
