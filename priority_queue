@@ -8,3 +8,5 @@ minHeap.add(4)
 println(minHeap.poll())  // Removes and prints the top element
 
 val top = minHeap.peek()  // Returns the smallest element without removing
+
+priorityQueue.isEmpty()
