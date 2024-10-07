@@ -1,3 +1,4 @@
  val diff = log(n.toDouble(), 3.0) % 1
 
 check other ways and question --> https://leetcode.com/problems/power-of-three/description/
+                                  https://leetcode.com/problems/power-of-four/
