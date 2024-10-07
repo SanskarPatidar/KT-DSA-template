@@ -1,0 +1,10 @@
+val minHeap = PriorityQueue<Int>() // not that kachara like in cpp
+
+val maxHeap = PriorityQueue<Int>(compareByDescending { it }) // like instead of sortDescending(), we can also use this for lists
+val maxHeap = PriorityQueue<Pair<Int, Int>>(compareByDescending { it.first }) // for Pair()
+
+minHeap.add(4)
+
+println(minHeap.poll())  // Removes and prints the top element
+
+val top = minHeap.peek()  // Returns the smallest element without removing
