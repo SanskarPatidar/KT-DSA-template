@@ -8,6 +8,13 @@ str.substring(i, i + length) like vec.begin(), vec.begin() + x
 
 var reverse = str.reversed() // will not change actual str since strings are immutable
 
+return str.lowercase()
+or 
+return str.tolowercase()
+
+
+
+
 USE STRING BUILDER CLASS FOR EFFICIENT STRING OPERATIONS-->
 
 Creating a StringBuilder
@@ -22,6 +29,11 @@ val sb = StringBuilder("Hello")
 With initial capacity:
 val sb = StringBuilder(100)  // Reserves capacity for 100 characters
 
+/*
+since we can't update a string and string builder has no concept of direct updation of perticular Char, we use this --> always
+sb.setCharAt(index, newChar) // Use setCharAt to modify the character at the desired index
+*/
+
 key methods -->
 sb.append(" World")       // Adds a string
 sb.append('!')            // Adds a character
@@ -33,7 +45,7 @@ sb.reverse()              // Reverses the string
 val capacity = sb.capacity()   // Returns the current capacity
 val length = sb.length         // Returns the current length
 sb.setLength(3)                // Sets the length to 3 characters
-
+sb.lowercase()
 val result: String = sb.toString()
 
 return number.toString() == number.reverse().toString()
