@@ -14,3 +14,5 @@ fun hammingDistance(x: Int, y: Int): Int {
 }
 
 ushr -  Unsigned Shift Right // check about it
+
+// CHECK BIT MANIPULATION IN BUILD FUNCTIONS
