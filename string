@@ -6,6 +6,8 @@ str.substring(i, j) // for substring from i until j
 do this -->
 str.substring(i, i + length) like vec.begin(), vec.begin() + x
 
+var reverse = str.reversed() // will not change actual str since strings are immutable
+
 USE STRING BUILDER CLASS FOR EFFICIENT STRING OPERATIONS-->
 
 Creating a StringBuilder
