@@ -1,3 +1,16 @@
-use 'and' instead of &
-use 'or' instead of |
-i still don't know why does it not work!!!
+Kotlin provides an alternative for using bitwise operations with 
+the shl, shr, ushr, and, or, and xor functions. However, if you 
+want to avoid using the named functions for bitwise operations 
+(xor, and, etc.), Kotlin offers another approach using infix functions.
+
+fun hammingDistance(x: Int, y: Int): Int {
+    var n = x xor y  // Infix 'xor' for bitwise XOR
+    var cnt = 0
+    while (n > 0) {
+        n = n and (n - 1) // Infix 'and' for bitwise AND
+        cnt++
+    }
+    return cnt
+}
+
+ushr -  Unsigned Shift Right // check about it
