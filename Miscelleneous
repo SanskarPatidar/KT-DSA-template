@@ -12,4 +12,6 @@
   for (word in words) {
       println(word) 
   }
+4.power --> only works for double so need to type convert
+  Math.pow(base, exponent)
 
