@@ -8,7 +8,7 @@ println(stack.pop())  // Pop the top element (prints 2) --> like remove(), can p
 
 val topElement = stack.peek()  // Returns 10, without removing it
 
-val isEmpty = stack.empty()  // Returns false, as stack contains elements
+val isEmpty = stack.isEmpty()  // Returns false, as stack contains elements
 
 val size = stack.size  // Returns 1
 
