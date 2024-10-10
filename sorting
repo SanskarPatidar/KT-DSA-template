@@ -5,7 +5,7 @@ fruits.sort()
 fruits.sortDescending()
 
 *** 
-common --> fruits.sortBy(it.second)
+common --> fruits.sortBy {it.second}
            edges.sortByDescending { it.dist }
 ***
 
