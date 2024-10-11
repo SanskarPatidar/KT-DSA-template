@@ -3,6 +3,8 @@ val minHeap = PriorityQueue<Int>() // not that kachara like in cpp
 val maxHeap = PriorityQueue<Int>(compareByDescending { it }) // like instead of sortDescending(), we can also use this for lists
 val maxHeap = PriorityQueue<Pair<Int, Int>>(compareByDescending { it.first }) // for Pair()
 
+priority queue does not know how to compare pair so define it explicitly --> val chairs = PriorityQueue<Int>(compareBy { it.first })
+
 minHeap.add(4)
 
 println(minHeap.poll())  // Removes and prints the top element
