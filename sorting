@@ -18,7 +18,7 @@ val b1 = b.toString();
 })
 
 *****smartly -- > words.sortBy { it.length }***** <-- easier than comparator
-
+                  words.sortByDescending{yada yada yada}
 //where a.compartTo(b) will give negative number if a<b *** first object is considered smaller than second so arrange like this --> a, b***
               	zero if a == b
              	positive if a>b *** first object is considered greater than second so arranged like this --> b, a***
