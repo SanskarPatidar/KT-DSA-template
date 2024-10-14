@@ -1,2 +1,5 @@
 to access first and last element -->
 Using .first() and .last() Functions
+
+to add list in set -->
+hashSet.addAll(list)
