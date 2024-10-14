@@ -45,6 +45,9 @@ vec.reverse()
 to check empty -->
 vec.isEmpty()
 
+to check for last value -->
+int lastValue = vec.back();  // Access the last value
+
 
 
 
