@@ -16,4 +16,5 @@
   Math.pow(base, exponent)
   OR
   base.pow(exponent)
-
+5.prev = curr --> Not to do becauz this is pointing to same instance
+  prev = curr.toMutableList() --> instead do this to copy
