@@ -12,7 +12,7 @@ return str.lowercase()
 or 
 return str.tolowercase()
 
-
+can't convert stringBuilder directly to int  becauz it is a CharArray so do this --> str.toString().toInt()
 
 
 USE STRING BUILDER CLASS FOR EFFICIENT STRING OPERATIONS-->
