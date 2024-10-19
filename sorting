@@ -2,6 +2,9 @@ SORTING-->
 
 fruits.sort()
 
+to sort in given range -->
+list.subList(startIndex, endIndex).sort()
+
 fruits.sortDescending()
 
 *** 
