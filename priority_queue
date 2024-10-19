@@ -1,4 +1,5 @@
 val minHeap = PriorityQueue<Int>() // not that kachara like in cpp
+val pq = PriorityQueue<Pair<Int, Int>>(compareBy { it.first })
 
 val maxHeap = PriorityQueue<Int>(compareByDescending { it }) // like instead of sortDescending(), we can also use this for lists
 val maxHeap = PriorityQueue<Pair<Int, Int>>(compareByDescending { it.first }) // for Pair()
