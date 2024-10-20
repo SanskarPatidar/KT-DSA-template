@@ -1,9 +1,6 @@
-var a = 1l // for long
-var a = 1.0f // for float
-var a = 1.0d // for double 
+var a = 1L // for long
+var a = 1.0F // for float
+var a = 1.0D // for double 
 
-keep them in small for no confusion
+keep them in capital for no confusion and for all languages
 
-L or l for Long
-D or d for Double
-F or f for Float
