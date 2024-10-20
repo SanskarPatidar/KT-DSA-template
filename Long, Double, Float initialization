@@ -1,0 +1,9 @@
+var a = 1l // for long
+var a = 1.0f // for float
+var a = 1.0d // for double 
+
+keep them in small for no confusion
+
+L or l for Long
+D or d for Double
+F or f for Float
