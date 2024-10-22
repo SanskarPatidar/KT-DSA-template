@@ -30,7 +30,9 @@ to erase -->
 map.remove(key)
 
 to access first and last element -->
-Using .first() and .last() Functions
+Using .first() and .last() Functions using entries for map
+map.firstKey()
+map.lastKey()
 
 ****************************Difference in getOrDefault and getOrPut*** -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 getOrDefault does not modify the map, just returns the default value if the key is absent.
