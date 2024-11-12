@@ -1,0 +1,15 @@
+readline() function -->
+readLine() on its own reads a single line from standard input as a String. 
+If you need input in any other format (such as an Int, Double, Long, or a list of numbers), 
+you have to parse or transform that string. This is why we often pair readLine() with 
+transformation functions, like toInt() or split(), to get the required data type or structure.
+
+val n = readLine()!!.toInt() // Reads a single integer from input
+
+val num = readLine()!!.toDouble() // Reads a single floating-point number
+
+val (a, b) = readLine()!!.split(" ").map { it.toInt() } // Reads two integers in a single line
+// or
+val numbers = readLine()!!.split(" ").map { it.toInt() } // Reads a list of integers
+
+val words = readLine()!!.split(" ") // Reads words as a list of strings
