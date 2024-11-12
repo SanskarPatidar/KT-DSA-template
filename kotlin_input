@@ -1,4 +1,4 @@
-readline() function -->
+readLine() function -->
 readLine() on its own reads a single line from standard input as a String. 
 If you need input in any other format (such as an Int, Double, Long, or a list of numbers), 
 you have to parse or transform that string. This is why we often pair readLine() with 
