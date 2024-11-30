@@ -53,7 +53,7 @@ vec.isEmpty()
 to check for last value -->
 val lastValue = list.last()  // Access the last value
 
-
+removeAt(index) removes the element at the specified index and shifts all subsequent elements to the left.
 
 
 
