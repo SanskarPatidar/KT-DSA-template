@@ -55,7 +55,7 @@ val lastValue = list.last()  // Access the last value
 
 removeAt(index) removes the element at the specified index and shifts all subsequent elements to the left.
 
-
+To add an element at a particular index in a MutableList in Kotlin, you can use the add(index, element) method.
 
 
 
