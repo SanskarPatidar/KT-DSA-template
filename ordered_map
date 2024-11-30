@@ -44,6 +44,16 @@ map.getOrDefault("c", 0)  // value = 0, map remains {"a" to 1, "b" to 2}
 val map = mutableMapOf("a" to 1, "b" to 2)
 val value = map.getOrPut("c") { 0 }  // value = 0, map becomes {"a" to 1, "b" to 2, "c" to 0}
 
+NOTE -->
+usage of getOrPut -->
+val adjList = HashMap<Int, MutableList<Int>>()
+adjList.getOrPut(i[0]) { mutableListOf() }.add(i[1])
+add Method Return Value: The add method in MutableList does not return 
+the list itself, but rather a Boolean indicating if the operation was 
+successful. You cannot assign the result of add directly to adjList[i[0]]. 
+You should call add directly.
+thus getOrDefault does not work here!!!!!
+
 Syntax: map.getOrPut(key) { defaultValue }
 
 NOTICE THE USAGE -->
