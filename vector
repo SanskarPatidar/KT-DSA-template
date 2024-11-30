@@ -28,6 +28,11 @@ init {
 }
 */
 
+2D empty-->
+var vec = mutableListOf<MutableList<Int>>()
+vec.add(mutableListOf(1, 1))
+
+
 vec.add(10)  // push equivalent
 vec.add(20)
 println(vec) // [10, 20]
