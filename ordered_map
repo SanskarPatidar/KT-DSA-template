@@ -54,6 +54,10 @@ successful. You cannot assign the result of add directly to adjList[i[0]].
 You should call add directly.
 thus getOrDefault does not work here!!!!!
 
+trick --> 
+if assignment then use getOrDefault
+else just use getOrPut
+
 Syntax: map.getOrPut(key) { defaultValue }
 
 NOTICE THE USAGE -->
