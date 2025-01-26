@@ -7,7 +7,7 @@ i in 0 until n //(exclusive end)
 i in 0..4 step 2 // STEP MUST BE POSITIVE
 
 i in 10 downTo 1 step 2 // only way from high to low value
-
+// inclusive from both ends
 vec.forEach{
 //use it as iterator
 }
