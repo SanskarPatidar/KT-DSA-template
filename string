@@ -26,8 +26,8 @@ val sb = StringBuilder()
 From an existing string:
 val sb = StringBuilder("Hello")
 
-With initial capacity:
-val sb = StringBuilder(100)  // Reserves capacity for 100 characters
+For size -->
+sb.setLength(50)
 
 /*
 since we can't update a string and string builder has no concept of direct updation of perticular Char, we use this --> always
